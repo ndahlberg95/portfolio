@@ -1,0 +1,138 @@
+:root {
+    --beige: #F4E8E0;
+    --charcoal: #2A2826;
+    --peach: ##F07250;
+    --grey: #C4BAB3;
+    --rust: #BF3B20;
+    --red: #E3310D;
+}
+
+body {
+    color: var(--charcoal);
+    background-color: var(--beige);
+    font-family: garamond;
+    margin: 0;
+    background-image: url ("../images/brushstroke.jpg");
+    background-repeat: none;
+}
+
+header {
+    background-color: var(--grey);
+    margin: 300px 100px 300px 100px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--beige);
+    background-color: var(--charcoal);
+    font-size: 48px;
+    margin: 0;
+    padding: 10px 5% 10px 5%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--charcoal);
+    background-color: var(--grey);
+    margin-right: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 30px;
+}
+
+nav a:hover {
+    color: var(--beige);
+    background-color: var(--rust);
+}
+
+.page-section h2 {
+    text-align: center;
+    padding-right: 15px;
+    font-size: 40px;
+}
+
+.about-work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about {
+    flex: 1;
+    align-self: center;
+    font-size: 25px;
+    text-align: justify;
+    margin: 20px;
+}
+
+#work {
+    flex: 2;
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 5px solid var(--rust);
+    background-color: var(--grey);
+    color: var(--red);
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    flex-basis: calc(50% - 1em);
+}
+
+.flex-item:last-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+    background-color: var(--charcoal);
+}
+
+.flex-item div {
+    padding: 8px 10px;
+}
+
+.contact {
+    background-color: var(--charcoal);
+    padding-bottom: 50px;
+}
+.contact h2 {
+    color: var(--grey);
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 30px;
+}
+
+.contact address a:hover {
+    background-color: var(--rust);
+}
